@@ -46,4 +46,5 @@ function buildTable(data){
    d3.selectAll("#filter-btn").on("click",handleClick);
 
    //Buld the table when the page loads.
+   buildTable(tableData);
 }
