@@ -22,10 +22,11 @@ function buildTable(data){
          }
       );
    });
+}
 
-   function handleClick(){
+ function handleClick(){
       //Grab datetime value from the filter
-      let date = d3.select("#datetime.").property("value"); 
+      let date = d3.select("#datetime").property("value"); 
       let filteredData = tableData;
 
       //Check to see if a date was entered and filter the
@@ -40,11 +41,9 @@ function buildTable(data){
       //@NOTE: If no date was entered, then filteredData will
       //just be the original tableData.
       buildTable(filteredData);
-   }
+ }
+ //Attach event to listen for the form button
+ d3.selectAll("#filter-btn").on("click",handleClick);
 
-   //Attach event to listen for the form button
-   d3.selectAll("#filter-btn").on("click",handleClick);
-
-   //Buld the table when the page loads.
-   buildTable(tableData);
-}
+//Buld the table when the page loads.
+ buildTable(tableData);
