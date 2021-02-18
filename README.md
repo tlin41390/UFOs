@@ -16,4 +16,10 @@
     type all that into the data and then they can get the specific results like this:
    ![specificSearch](https://github.com/tlin41390/UFOs/blob/main/Resources/specificSearch.png)
    
-   
+  ### Drawbacks
+     One Drawback to this program is that it is case sensitives, so capitalization matters when trying to filter out searches.
+     In addition, for countries, you have to enter the code for the country, not its full name in some instances. The date is also
+     in one format only, so you cannot enter the date in different ways. To remedy this issue, you can have code that will make sure
+     to accept any type of format for entering the date, the country, the city, and in upper or lower case. Another possible improvement,
+     is if the website can extract data directly from another website, so that there can be constant updates on logging UFO sightings(Web Scraping)
+     instead of just relying on a data object.
